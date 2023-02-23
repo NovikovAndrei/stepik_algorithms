@@ -39,7 +39,7 @@ class PriorityQueue:
         for queue in self.priority_queue.values():
             if queue:
                 return queue.popleft()
-        raise IndexError("очередь пуста")
+        raise IndexError("очередь пустая")
 
     def peek(self, ind: int = 0, priority: int = 0) -> Any:
         """
