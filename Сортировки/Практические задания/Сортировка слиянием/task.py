@@ -14,7 +14,20 @@ def sort(container: List[int]) -> List[int]:
     """
 
     # TODO реализуйте сортировку слиянием
-
+    # def _merge(left_c: list, right_c: list) -> list:
+    #     result = []
+    #     while True:
+    #         if left_c[0] <= right_c[0]:
+    #             result.append(left_c.pop(0))
+    #         else:
+    #             result.append(right_c.pop(0))
+    #         if not left_c:
+    #             result += right_c
+    #             break
+    #         if not right_c:
+    #             result += left_c
+    #             break
+    #     return result
     if len(container) < 2:
         return container
 
@@ -41,7 +54,6 @@ def merge(left_c: list, right_c: list) -> list:
             break
     return result
 
-
 # def merge2(left_c: list, right_c: list) -> list:
 #     result = []
 #     i = 0
@@ -66,4 +78,3 @@ def merge(left_c: list, right_c: list) -> list:
 # print((merge([1,5], [4])))
 # print(merge2([1,2,7], [8,34,99]))
 # print((merge2([1,5], [4])))
-print(sort([5, 7, 33, 2, 7, 0, 98, 55, 2]))

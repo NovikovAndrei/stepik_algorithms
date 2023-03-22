@@ -38,6 +38,5 @@ def sort(container: List[int]) -> List[int]:
             sort([item for item in container if item > pivot])
     )
 
-
 a = [77, 5, 2, 99, 14, 55, 3, 8, 6, 12]
 print(sort(a))
