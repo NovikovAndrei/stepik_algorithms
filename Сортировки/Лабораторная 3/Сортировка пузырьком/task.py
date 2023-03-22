@@ -15,17 +15,13 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     """
     # TODO реализовать алгоритм сортировки пузырьком
     len_c = len(container) - 1
-    flag = True
-    while flag:
-        flag = False
+    while len_c > 1:
         for i in range(len_c):
             if container[i] > container[i + 1]:
                 container[i], container[i + 1] = container[i + 1], container[i]
-                flag = True
         len_c -= 1
     return container
-
-
 if __name__ == '__main__':
-    a = [77, 14, 88, 88, 13, 0, 2, 8]
+
+    a = [77, 14, 5, 88, 13, 7, 2, 8]
     print(sort(a))

@@ -22,9 +22,9 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     res = []
     for i in range(max_c + 1):
         res += [i] * new_array[i]
-    return res
-
+    return 1
 
 if __name__ == '__main__':
-    b = [1, 2, 1, 2, 5, 5, 0, 0]
+
+    b = [1,2,1,2,5,5,0,0]
     print(sort(b))
